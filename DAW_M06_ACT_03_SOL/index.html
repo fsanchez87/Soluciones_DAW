@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="concesionario.js" type="text/javascript"></script>
+        <link href="newCascadeStyleSheet.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h3>EXTRAS DISPONIBLES</h3>
+        <div id="listadoExtras"> </div>
+
+        <h3>COCHES DISPONIBLES</h3>
+        <div id="listadoCoches"> </div>
+
+        <!--10.	Crea la estructura HTML que se muestra a continuación y -->
+        <h2>GESTIONA EXTRAS</h2>
+        <input type="number" id="precioExtra" placeholder="precio"/>
+        <select id="urlExtra">
+            <option value="imgs/concha_azul.jpeg">concha_azul</option>
+            <option value="imgs/concha_roja.jpeg">concha_roja</option>
+            <option value="imgs/concha_verde.jpeg">concha_verde</option>
+            <option value="imgs/estrella.jpeg">estrella</option>
+            <option value="imgs/platano.jpeg">platano</option>
+            <option value="imgs/seta_grande.jpeg">seta_grande</option>
+        </select>
+        <button onclick="addNewExtra();">ADD EXTRA</button> 
+
+        <!--11.	Crea la estructura HTML que se muestra a continuación y programam BORRAR.. -->
+        Posicion a borrar<input type="number" placeholder="numero" id="numeroBorrar"> 
+        <button onclick="borrarExtra();">BORRAR</button>
+        
+        <!--12 	Crea la estructura HTML que se muestra a continuación y programa ADD COCHE.. -->
+        <h2>CREA UN COCHE DISPONIBLE</h2>
+        <input type="text" id="nombreCoche" placeholder="nombre" />
+        <input type="number" id="velocidadCoche" placeholder="velocidad" />Km/h
+        <button onclick="addNewCoche();">ADD COCHE</button> 
+        
+        <!--13 Crea la estructura HTML que se muestra a continuación y modifica  mostrarExtras()..-->
+        <h2>ASIGNA UN EXTRA A UN COCHE</h2>
+        Extra:<select  id="numeroExtra"></select>
+        Nombre Coche:<select id="numeroCoche"></select>
+        <button onclick="addExtraCoche();">ADD EXTRA COCHE</button>
+
+
+
+    </body>
+</html>

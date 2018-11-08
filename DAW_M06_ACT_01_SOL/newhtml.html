@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script type="text/javascript">
+            document.write("<b>Document.write</b> nos permite escribir texto o tags HTML");
+            document.write("<br />");
+            document.write("pero solo mientras se carga la web. ");
+            document.write("Si lo utilizamos una vez cargada la web, se borrará todo el contenido HTML");
+            
+        </script>
+
+
+        <script type="text/javascript">
+//            document.write();
+//            var texto = window.prompt("Cuando se ejecuta el JavaScript?");
+//            window.alert("se ejecuta:" + texto);
+            
+        </script>
+
+        <h1 id="titulo">DEPURAR EL CODIGO JAVASCRIPT </h1>
+        <p id="contenido"></p>
+
+        <script src="modificarHTML.js" type="text/javascript"></script>    
+        <!-- al clicar sobre un DIV llamamos a la función "saluda()" -->
+        <div onclick="saluda('bienvenidos a JavaScript');"></div>
+
+        <h2>MENU JAVASCRIPT</h2>
+        <h4 id="seleccionaPrimero" onclick="seleccionaPrimero()">CLICK PARA SELECCIONAR EL PRIMERO</h4>
+        <h4 onclick="seleccionaSegundo()">CLICK PARA SELECCIONAR EL SEGUNDO</h4>
+        <!--  -->
+        <script src="seleccionaMenu.js" type="text/javascript"></script>
+
+        <div id="primero">
+
+        </div>
+        <div id="segundo">
+
+        </div>
+        
+       
+
+    </body>
+</html>
