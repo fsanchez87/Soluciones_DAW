@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        
+        <title>DAW</title>
+     
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Explicacio sobre els continguts d’aquesta pagina">
+
+
+        
+        <link  href="css/dom.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/dom.js"></script>
+    </head>
+
+    <body >
+        <!--Article-->
+         <article class="article_main_web">
+            <header class="header_article">
+                <hgroup> 
+                    <h2>DOM!!</h2>
+                </hgroup>
+            </header>
+            <nav id="selectOperation">
+                <div id="addText" onclick="addText();"> ADD TEXT </div>	
+                <div id="setColor" onclick="setColor();"> SET A COLOR </div>	
+                
+                <div id="addDiv" onclick="addDiv();"> NEW ADD DIV </div>
+                <div id="addSpan" onclick="addSpan();"> NEW ADD SPAN </div>
+
+                <div id="setContentPrev" onclick="setContentPrev()"> NEW DIV SET CONTENT PREVIOUS ELEMENT </div>
+                <div id="delPrevNode" onclick="delPrevNode()"> NEW DIV DELETE PREVIOUS ELEMENT </div>
+                <div id="delNextNode" onclick="delNextNode()"> NEW DIV DELETE NEXT ELEMENT </div>
+                  <div id="addAttr" onclick="addAttr();"> NEW DIV SET ATTRIBUTE</div>
+                <div id="delAllType" onclick="delAllType();"> NEW DIV REMOVE ALL TYPE </div>
+            </nav>
+            <section id="domNodes">
+                <h3>!!ADD DIVS HERE!!!</h3>
+
+            </section>
+        </article>
+    </body>
+</html>

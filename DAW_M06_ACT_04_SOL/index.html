@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+DAW_M06_T4_ACT_Control_de_formularios_y_persistencia_en_cookies
+-->
+<html>
+    <head>
+        <title>CONTROL DE LOS DATOS DE UN FORMULARIO Y PERSISTENCIA EN COOKIES</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" type="text/css" href="formulario.css">
+           <script type="text/javascript" src="formulario.js"></script>
+    </head>
+    <body>
+        <div>CONTROL DE LOS DATOS DE UN FORMULARIO Y PERSISTENCIA EN COOKIES</div>
+        <form onsubmit="return validarFormulario();" name="formulario1">
+            Nombre Producto<input name="inputNombre" type="text" id="inputNombre" onkeyup="checkInputNombreKeyUp();"/><br/>
+            Codigo de Barras:<input name="inputCodigo" type="text" id="inputCodigo" onkeyup="chechInputCodigoKeyUp();"/><br/>
+            Caducidad dia:<input name="inputDia" type="text" id="inputDia" onkeyup="checkInputFechaKeyUp()"/> 
+            mes: <input type="text" name="inputMes"  id="inputMes" onkeyup="checkInputFechaKeyUp()"/>
+            año  <input type="text" name="inputAno" id="inputAno" onkeyup="checkInputFechaKeyUp()"/> <br/>
+            Oferta <select name="oferta" id="oferta">
+                <option value="normal">Normal</option>
+                <option value="2x1">2x1</option>
+                <option value="20%">20%</option>
+                <option value="10%">10%</option>
+            </select>
+
+            Congelado<input type="checkbox" name="tipo" id="Congelado" value="Congelado"/> 
+            Fruta<input type="checkbox" name="tipo" id="Fruta"  value="Fruta"/> 
+            Snack<input type="checkbox" name="tipo" id="Snack" value="Snack"/> 
+            
+            
+            <br/>
+            
+            <input type="submit" value="Regístrate"/>
+            <input type="reset" value="Limpia el formulario" />
+            <input type="button" value="Guardar Datos" onclick="guardarDatos()" />
+            <input type="button" value="Recuperar Datos" onclick ="recuperarDatos()"/>
+            <br />
+            <textarea id="resulFormuario" >
+                TextArea con la información
+            </textarea>
+        </form>
+    </body>
+</html>
